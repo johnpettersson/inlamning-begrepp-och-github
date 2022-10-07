@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Inlämning: Begrepp och Github</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="navbar navbar-dark bg-dark justify-content-center">
+        <a href="#" class="navbar-brand">Inlämning: Begrepp och Github</a>
+    </div>
+
+    <div class="container my-3">
+        <h1>Github Flow</h1>
+        <p>Github flow är en metod för att arbeta tillsammans på github. I korthet så består det av
+            nedanstående steg. </p>
+        <ol>
+            <li> Vi börjar med att skapa en ny branch så att vi kan göra ändringar utan att "förstöra"
+                mainbranchen.</li>
+            <li> Sedan implementerar vi någonting. Det kan t.ex. handla om någon ny feature eller en lösning
+                på något issue.</li>
+            <li> När ändringarna är commitade och pushade till branchen kan vi göra en
+                pull request.
+                I vår pull request kan vi lägga till vilka medlemmar av repot som ska godkänna den. Om det
+                var en lösning till ett issue kan vi även länka till det.
+                Medlemmarna i repot vi taggar kan då gå in och dubbelkolla vår nya kod och godkänna att den mergas in i huvudbranchen.
+            </li>
+            <li> Efter att en pullrequest är godkänd kan vi merga in den i huvudbranchen. Till sist kan vi ta bort branchen vi programmerat på.</li>
+        </ol>
+        </p>
+
+        <h1>Flexbox</h1>
+        <p>Flexbox är ett sätt att hantera layout på med CSS. Istället för <code>block/inline</code> så sätter vi
+            <code>display: flex</code> på en container.
+            Den blir då en flex-container och alla containerns direkta barn blir flex-items
+            Vi kan bland annat ändra olika CSS-attribut på containern för att: </p>
+        <ul>
+            <li>ändra riktning på layouten med <code>flex-direction</code></li>
+            <li>ändra hur containern distribuerar tillgängligt utrymme till sitt innehåll med <code>flex-wrap</code></li>
+            <li>ändra hur containern lägger ut sitt innehåll både längs med sin riktning med <code>justify-content</code>
+                och tvärs över med <code>align-items</code>. </li>
+        </ul>
+
+
+        <p>På flex-items kan vi ändra hur mycket plats de ska ta upp i förhållande till varandra
+            med <code>flex-grow</code> och ändra deras ordning med <code>order</code>.</p>
+
+        <h1>DOM (Document Object Model)</h1>
+        DOM är en datastruktur som gör att vi kan manipulera vår HTML med javascript.
+        Vi kan manipulera DOM genom flera olika properties och funktioner på document-objectet i javascript.
+        Vi kan hitta element med <code>getElementByID</code> och <code>querySelector</code>.
+        På varje element kan vi t.ex. också:
+        <ul>
+            <li>Ändra properties, t.ex. <code>classList</code> eller <code>style</code> för att förändra hur elementet ser ut</li>
+            <li>Förändra elementets ättlingar med <code>appendChild</code>, <code>replaceChild</code>, <code>removeChild</code> (eller ändra
+                elementets innehåll direkt med <code>innerHTML/innerText</code>)</li>
+            <li>Lägga till eventlisteners som kör en viss funktion när elementet interageras med, t.ex.
+                klickas på. Detta görs med <code>addEventlistener</code></li>
+        </ul>
+
+        <h1>Fin kod</h1>
+        <p>Fin kod handlar om att skriva på ett sätt som gör det lätt för andra att läsa och förstå din kod.
+            Det underlättar givetvis även för dig själv när du återvänder till din kod efter x antal
+            dagar/veckor/månader och kanske inte kom ihåg hur du tänkt.</p>
+        <p>Det är t.ex. viktigt att namnge variabler och funktioner så att man förstår deras syfte.
+            Skriva kommentarer i sin kod, om man skriver någonting som kanske är lite mer advancerat eller
+            vid första
+            anblick inte är enkelt att förstå.
+            Jag tycker också det är viktigt att vara enhetlig, bestäm dig för en kodstandard och följ den.
+            Det kan t.ex. handla om att använda camelcase (stor bokstav på varje nytt ord i en
+            variabel/funktion) ex.
+            <code>function reloadAllUsers() {}</code>
+            eller att alltid använda stora bokstäver till konstanter.
+            Och arbetar man i grupp är också viktigt att komma överens om vilken kodstandard man ska
+            följa.
+        </p>
+
+        <h1>Ramverk</h1>
+        <p>Ramverk är färdiga bibliotek med kod som vi kan använda för att slippa behöva uppfinna hjulet
+            varje gång man
+            startar ett nytt projekt.</p>
+        <p>Exempel på ramverk som används inom webbutveckling för frontend är React, Vue och Angular</p>
+        <p>Bootstrap är ett ramverk för frontend som innehåller färdig CSS och JS som gör att vi kan göra
+            responsiva
+            layouts utan att egentligen behöva skriva någon CSS själva.
+            Den färdiga javascripten i bootstrap gör att man kan lägga in komponenter utan att göra själva
+            implementeringen av dem själv, t.ex. dropdowns eller modaldialoger.
+        </p>
+        <p>Express.js är ett ramverk för backend som används med Node.js för att skapa
+            webserverapplikationer. </p>
+
+        <h1>Källor</h1>
+        <ul>
+            <li><a href="https://docs.github.com/en/get-started/quickstart/github-flow">https://docs.github.com/en/get-started/quickstart/github-flow</a> [2022-10-07]</li>
+            <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">https://www.w3schools.com/css/css3_flexbox.asp</a> [2022-10-07]</li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a> [2022-10-07]</li>
+            <li><a href="https://www.w3schools.com/js/js_htmldom.asp">https://www.w3schools.com/js/js_htmldom.asp</a> [2022-10-07]</li>
+            <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)">https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)</a> [2022-10-07]</li>
+            <li><a href="https://expressjs.com/">https://expressjs.com/</a> [2022-10-07]</li>
+        </ul>
+    </div>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
